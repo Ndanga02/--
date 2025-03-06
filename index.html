@@ -10,6 +10,7 @@
 <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <canvas id="particleCanvas" class="particle-background"></canvas>
     <header>
         <div class="container">
             <nav>
@@ -28,35 +29,36 @@
     
     <main class="main-content">
         <section id="home" class="container">
-            <div class="hero">
-                <h1>Ndanganeni Nedzamba</h1>
+    <div class="hero">
+        <h1 id="quantum-name">Ndanganeni Nedzamba</h1>
                 <p>Data Analyst & Machine Learning Engineer specializing in Quantitative Economics and Econometrics. Business Analyst with a passion for solving complex problems through advanced modeling techniques.</p>
                 <div class="cta-buttons">
                     <a href="#projects" class="btn btn-primary">View My Work</a>
                     <a href="#contact" class="btn btn-outline">Get In Touch</a>
                 </div>
                 <div class="code-snippet">
-                    <pre>
-def quantum_economic_model(market_data, quantum_states=3):
-    # Pioneering quantum economics algorithm
-    # that models market behavior using quantum superposition
-    quantum_wave_function = initialize_quantum_state(market_data)
-    entangled_states = create_economic_entanglement(quantum_wave_function)
-    
-    # Apply Hamiltonian to model complex market dynamics
-    hamiltonian = market_hamiltonian_operator(entangled_states)
-    prediction = solve_schrodinger_equation(hamiltonian, t=future_timeframe)
-    
-    return interpret_quantum_prediction(prediction)</pre>
+                    <div class="code-quantum-effect"></div>
+                    <pre id="quantumCode">
+                def quantum_economic_model(market_data, quantum_states=3):
+                    # Pioneering quantum economics algorithm
+                    # that models market behavior using quantum superposition
+                    quantum_wave_function = initialize_quantum_state(market_data)
+                    entangled_states = create_economic_entanglement(quantum_wave_function)
+                    
+                    # Apply Hamiltonian to model complex market dynamics
+                    hamiltonian = market_hamiltonian_operator(entangled_states)
+                    prediction = solve_schrodinger_equation(hamiltonian, t=future_timeframe)
+                    
+                    return interpret_quantum_prediction(prediction)</pre>
                 </div>
             </div>
         </section>
         
         <section id="about" class="container" style="margin-top: 5rem;">
-            <h2 class="section-title">About Me</h2>
+            <h2 class="section-title glitch-title" data-text="About Me">About Me</h2>
             <div class="about-content">
                 <div>
-                    <img src="image_b.jpg" alt="Ndanganeni Nedzamba" class="profile-img">
+                    <img src="image.jpg" alt="Ndanganeni Nedzamba" class="profile-img" loading="lazy">
                 </div>
                 <div class="about-text">
                     <p>I'm a 23-year-old graduate Business Analyst with a BCom in Economics and Econometrics from the University of Johannesburg (Class of 2024), where I specialized in Quantitative Economics.</p>
@@ -68,7 +70,7 @@ def quantum_economic_model(market_data, quantum_states=3):
         </section>
         
         <section id="skills" class="container" style="margin-top: 5rem;">
-            <h2 class="section-title">Elite Skills</h2>
+            <h2 class="section-title glitch-title" data-text="Elite Skills">Elite Skills</h2>
             <div class="skills-grid">
                 <div class="skill-card">
                     <h3>Quantum Economic Modeling</h3>
@@ -104,67 +106,70 @@ def quantum_economic_model(market_data, quantum_states=3):
         </section>
         
         <section id="projects" class="container" style="margin-top: 5rem;">
-            <h2 class="section-title">Featured Projects</h2>
+            <h2 class="section-title glitch-title" data-text="Featured Projects">Featured Projects</h2>
             <div class="projects-grid">
-                <div class="project-card">
-                    <div class="project-card-inner">
-                        <img src="Entanglement-Based Market Prediction.jpg" alt="QuantumEcon Project" class="project-img">
-                        <div class="project-content">
-                            <h3>QuantumEcon: Entanglement-Based Market Prediction</h3>
-                            <p>Developed a groundbreaking economic forecasting system that applies quantum computing principles to model complex market interdependencies.</p>
-                            <div class="tags">
-                                <span class="tag">Quantum Computing</span>
-                                <span class="tag">Economic Modeling</span>
-                                <span class="tag">Python</span>
-                                <span class="tag">Q#</span>
-                            </div>
-                            <div class="project-links">
-                                <a href="#" class="btn btn-outline">View Project</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="project-card">
-                    <div class="project-card-inner">
-                        <img src="NeuroMarket Spiking Neural Network Economic Simulator.jpg" alt="NeuroMarket Project" class="project-img">
-                        <div class="project-content">
-                            <h3>NeuroMarket: Spiking Neural Network Economic Simulator</h3>
-                            <p>Created a neuromorphic computing platform that simulates market behaviors using brain-inspired computing architectures.</p>
-                            <div class="tags">
-                                <span class="tag">Neuromorphic Computing</span>
-                                <span class="tag">Spiking Neural Networks</span>
-                                <span class="tag">TensorFlow</span>
-                                <span class="tag">C++</span>
-                            </div>
-                            <div class="project-links">
-                                <a href="#" class="btn btn-outline">View Project</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="project-card">
-                    <div class="project-card-inner">
-                        <img src="TopoFinance Topological Data Analysis for Market Structures.jpg" alt="TopoFinance Project" class="project-img">
-                        <div class="project-content">
-                            <h3>TopoFinance: Topological Data Analysis for Market Structures</h3>
-                            <p>Applied algebraic topology techniques to uncover hidden structures in financial markets and predict phase transitions before they appear in traditional metrics.</p>
-                            <div class="tags">
-                                <span class="tag">Topological Data Analysis</span>
-                                <span class="tag">Persistent Homology</span>
-                                <span class="tag">R</span>
-                                <span class="tag">Julia</span>
-                            </div>
-                            <div class="project-links">
-                                <a href="#" class="btn btn-outline">View Project</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                <!-- Add this code to update your project cards in index.html -->
+<!-- Replace your existing project cards with these -->
+
+<div class="project-card" data-category="quantum">
+    <div class="project-card-inner">
+        <img src="Entanglement-Based Market Prediction.jpg" alt="QuantumEcon Project" class="project-img">
+        <div class="project-content">
+            <h3>QuantumEcon: Entanglement-Based Market Prediction</h3>
+            <p>Developed a groundbreaking economic forecasting system that applies quantum computing principles to model complex market interdependencies.</p>
+            <div class="tags">
+                <span class="tag">Quantum Computing</span>
+                <span class="tag">Economic Modeling</span>
+                <span class="tag">Python</span>
+                <span class="tag">Q#</span>
+            </div>
+            <div class="project-links">
+                <a href="project.html?id=quantumecon" class="btn btn-outline">View Project</a>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="project-card" data-category="ml">
+    <div class="project-card-inner">
+        <img src="NeuroMarket Spiking Neural Network Economic Simulator.jpg" alt="NeuroMarket Project" class="project-img">
+        <div class="project-content">
+            <h3>NeuroMarket: Spiking Neural Network Economic Simulator</h3>
+            <p>Created a neuromorphic computing platform that simulates market behaviors using brain-inspired computing architectures.</p>
+            <div class="tags">
+                <span class="tag">Neuromorphic Computing</span>
+                <span class="tag">Spiking Neural Networks</span>
+                <span class="tag">TensorFlow</span>
+                <span class="tag">C++</span>
+            </div>
+            <div class="project-links">
+                <a href="project.html?id=neuromarket" class="btn btn-outline">View Project</a>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="project-card" data-category="data">
+    <div class="project-card-inner">
+        <img src="TopoFinance Topological Data Analysis for Market Structures.jpg" alt="TopoFinance Project" class="project-img">
+        <div class="project-content">
+            <h3>TopoFinance: Topological Data Analysis for Market Structures</h3>
+            <p>Applied algebraic topology techniques to uncover hidden structures in financial markets and predict phase transitions before they appear in traditional metrics.</p>
+            <div class="tags">
+                <span class="tag">Topological Data Analysis</span>
+                <span class="tag">Persistent Homology</span>
+                <span class="tag">R</span>
+                <span class="tag">Julia</span>
+            </div>
+            <div class="project-links">
+                <a href="project.html?id=topofinance" class="btn btn-outline">View Project</a>
+            </div>
+        </div>
+    </div>
+</div>
             </div>
         </section>
         
         <section id="blog" class="container" style="margin-top: 5rem;">
-            <h2 class="section-title">Latest Articles</h2>
+            <h2 class="section-title glitch-title" data-text="Latest Articles">Latest Articles</h2>
             <div class="blog-preview">
                 <div class="blog-card">
                     <h3>Quantum Entanglement as a Framework for Understanding Market Correlations</h3>
@@ -188,7 +193,7 @@ def quantum_economic_model(market_data, quantum_states=3):
         </section>
         
         <section id="contact" class="container" style="margin-top: 5rem;">
-            <h2 class="section-title">Get In Touch</h2>
+            <h2 class="section-title glitch-title" data-text="Get In Touch">Get In Touch</h2>
             <div class="contact-form">
                 <form>
                     <div class="form-group">
@@ -250,5 +255,7 @@ def quantum_economic_model(market_data, quantum_states=3):
     </footer>
 
 <script src="scripts.js"></script>
+<script src="particles.js"></script>
+<script src="parallax.js"></script>
 </body>
 </html>
