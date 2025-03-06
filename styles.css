@@ -532,3 +532,31 @@ input:focus, textarea:focus {
 .project-card:hover .project-card-inner {
     transform: rotateY(5deg) translateZ(10px);
 }
+
+.code-snippet {
+    background-color: var(--primary);
+    padding: 1.5rem;
+    border-radius: 0.5rem;
+    margin-top: 1rem;
+    font-family: 'Fira Code', monospace;
+    font-size: 0.875rem;
+    color: #e2e8f0;
+    overflow-x: auto; /* Allows horizontal scrolling if needed */
+    position: relative;
+    max-width: 100%; /* Ensures it doesn't overflow its container */
+    box-sizing: border-box; /* Ensures padding is included in width */
+}
+
+.code-snippet pre {
+    white-space: pre-wrap; /* Ensures code wraps on small screens */
+    word-wrap: break-word; /* Breaks long lines of code */
+    margin: 0; /* Removes default margin */
+}
+
+.code-snippet::before {
+    content: "// Quantum Economics Modeling";
+    color: #4299e1;
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+}
