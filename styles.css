@@ -1313,3 +1313,35 @@ header.scrolled {
     align-items: center;
     min-height: 150px;
   }
+
+  .valuation-highlights {
+    background-color: rgba(66, 153, 225, 0.05);
+    padding: 1rem;
+    border-radius: 0.5rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.valuation-metric {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0.5rem;
+    border-bottom: 1px solid rgba(66, 153, 225, 0.1);
+    padding-bottom: 0.5rem;
+}
+
+.valuation-metric:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+.metric-name {
+    font-weight: 500;
+    color: var(--text-dark);
+}
+
+.metric-value {
+    font-weight: 600;
+    color: var(--accent);
+}

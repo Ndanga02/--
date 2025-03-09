@@ -100,13 +100,14 @@ const setupProjectFilters = () => {
         <button class="filter-btn" data-filter="economics">Economics</button>
         <button class="filter-btn" data-filter="ml">Machine Learning</button>
         <button class="filter-btn" data-filter="data">Data Analysis</button>
+        <button class="filter-btn" data-filter="financial analysis">Financial Analysis</button>
     `;
     
     document.querySelector('#projects h2').after(filterContainer);
     
     // Add category data to projects
     document.querySelectorAll('.project-card').forEach(card => {
-        card.dataset.category = ['economics', 'ml', 'data'][Math.floor(Math.random() * 3)];
+        card.dataset.category = ['economics', 'ml', 'data', 'financial analysis'][Math.floor(Math.random() * 3)];
     });
     
     document.querySelectorAll('.filter-btn').forEach(btn => {
